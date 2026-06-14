@@ -36,3 +36,7 @@ require("lazy").setup({
 })
 
 require("lsp.lua_ls")
+
+vim.keymap.set("n", "<leader>vd", function()
+  vim.diagnostic.open_float({ border = "rounded", scope = "line" })
+end, { desc = "Show line diagnostic" })

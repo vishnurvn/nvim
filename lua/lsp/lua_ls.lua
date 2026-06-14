@@ -25,6 +25,14 @@ vim.lsp.config("basedpyright", {
   root_dir = vim.fn.getcwd(),
   filetypes = { "python" },
   root_markers = { { "pyproject.toml", "setup.py" }, ".git" },
+  settings = {
+    basedpyright = {
+      disableOrganizeImports = false,
+      analysis = {
+        typeCheckingMode = "all",
+      },
+    },
+  },
 })
 
 vim.lsp.enable("lua_ls")
