@@ -8,13 +8,14 @@ return {
       { "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
     },
     keys = {
-      { "<leader>f", "<cmd>Telescope find_files<cr>", desc = "Find files" },
+      { "<leader>ff", "<cmd>Telescope find_files<cr>", desc = "Find files" },
       { "<leader>gr", "<cmd>Telescope lsp_references<cr>", desc = "LSP References" },
       { "<leader>gd", "<cmd>Telescope lsp_definitions<cr>", desc = "LSP Definitions" },
       { "<leader>ca", "<cmd>lua vim.lsp.buf.code_action()<cr>", desc = "LSP Code Actions" },
       { "<leader>ds", "<cmd>Telescope lsp_document_symbols<cr>", desc = "LSP Document symbols" },
       { "<leader>ws", "<cmd>Telescope lsp_workspace_symbols<cr>", desc = "LSP Workspace symbols" },
       { "<leader>fd", "<cmd>Telescope diagnostics<cr>", desc = "LSP get file diagnostics" },
+      { "<leader>fb", "<cmd>Telescope buffers<cr>", desc = "LSP list all buffers" },
     },
     opts = {
       defaults = {
